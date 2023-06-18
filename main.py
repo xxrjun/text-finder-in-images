@@ -18,11 +18,11 @@ def ocr_image(input_path):
 
 # 對每張圖片進行OCR並儲存結果
 ocr_results = {}
+image_files = glob.glob('./images/*')
 if os.path.exists('ocr_results.json'):
     with open('ocr_results.json', 'r') as f:
         ocr_results = json.load(f)
 else:
-    image_files = glob.glob('./images/*')
     for image_file in image_files:
         print(f'Processing image {image_file}')
         ocr_results[image_file] = ocr_image(image_file)
@@ -45,12 +45,13 @@ while True:
         for word, left, top, width, height in words:
             if keyword in word:
                 print(f'Keyword found in {image_file} at position {left}, {top}')
-                img = cv2.rectangle(img, (left, top), (left + width, top + height), (0, 255, 0), 2)
+                img = cv2.rectangle(img, (left, top), (left + width, top + height), (0, 255, 0), 1)
                 found = True
         if found:
             cv2.imshow('img', img)
-            if cv2.waitKey(0) & 0xFF == ord('q'):
-                cv2.destroyAllWindows()
-                break
+            while True:
+                if cv2.waitKey(1) & 0xFF == ord('q'):
+                    cv2.destroyAllWindows()
+                    break
         else:
             print(f'Keyword not found in {image_file}')
