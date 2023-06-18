@@ -2,6 +2,8 @@
 
 Languages: [English](README.md) | [中文](translations/README-zh.md)
 
+Demo (YouTube): [Text Finder in Images with Python](https://youtu.be/VXH5HTQ3lSI)
+
 # OCR Text Finder in Images
 
 > The initial reason for writing this program was that I was the network administrator of my department, and I had to conduct an asset inventory due to a change in department leadership.

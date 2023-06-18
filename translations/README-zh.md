@@ -2,6 +2,8 @@
 
 語言: [英文](../README.md) | [中文](translations/README-zh.md)
 
+演示 (YouTube): [Text Finder in Images with Python](https://youtu.be/VXH5HTQ3lSI)
+
 # 圖片中的 OCR 文字搜尋器 (OCR Text Finder in Images)
 
 > 一開始撰寫此程式的目的是因為我是系所的網管，要做財產盤點，剛好遇上系上所長更換。
