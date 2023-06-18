@@ -1,4 +1,8 @@
-# OCR Image Keyword Search
+![GitHub license](https://img.shields.io/github/license/xxrjun/text-finder-in-images) ![GitHub repo size](https://img.shields.io/github/repo-size/xxrjun/text-finder-in-images)
+
+Languages: [English](README.md) | [中文](translations/README-zh.md)
+
+# OCR Text Finder in Images
 
 OCR Image Keyword Search is an efficient and user-friendly Python application that utilizes **Optical Character Recognition (OCR)** to search for user-specified keywords in a set of images. The application uses the Tesseract OCR engine and OpenCV for image processing, and stores OCR results for faster subsequent searches.
 
@@ -7,7 +11,23 @@ OCR Image Keyword Search is an efficient and user-friendly Python application th
 Before you begin, ensure you have met the following requirements:
 
 - Python 3.6 or later.
-- Put the images you want to search in the `./images` directory.
+- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) installed on your machine.
+
+  For **Windows** users, you can download the installer from the [UB Mannheim Github page](https://github.com/UB-Mannheim/tesseract/wiki) and follow the installation instructions.
+
+  For **Mac** users, you can install Tesseract using Homebrew:
+
+  ```bash
+  brew install tesseract
+  ```
+
+  For **Linux** users, you can install Tesseract using apt:
+
+  ```bash
+  sudo apt install tesseract-ocr
+  ```
+
+- Replace the images in the `./images` directory with the images you want to search.
 
 ## Installation
 
