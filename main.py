@@ -4,7 +4,7 @@ import os
 import json
 import glob
 
-# 設定tesseract的路徑
+# TODO: 設定tesseract的路徑
 pytesseract.pytesseract.tesseract_cmd = r'/opt/homebrew/bin/tesseract'
 
 
