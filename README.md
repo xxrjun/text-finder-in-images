@@ -68,7 +68,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## Usage
 
-1. Place the images you want to search in the `./images` directory.
+1. Place the images you want to search in the `./images` directory. `.jpg` file format is recommended.
 2. Modify the `main.py` file to set the path to the Tesseract OCR executable(in line 8):
 
    ```python
